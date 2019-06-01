@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix=';')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -17,8 +17,8 @@ async def on_message(message):
 
 
 @bot.commands
-async def ping(ctx):
-    await ctx.send('pong')
+async def sss(ctx):
+    await ctx.send('test')
 
 
 bot.run(token)
